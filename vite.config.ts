@@ -16,7 +16,7 @@ function figmaAssetResolver() {
 }
 
 export default defineConfig({
-  base: '/specref.github.io/',
+  base: '/specref-home/',
   plugins: [
     figmaAssetResolver(),
     react(),
