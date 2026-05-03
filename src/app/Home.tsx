@@ -46,30 +46,6 @@ const cards = [
     linkColor: "text-amber-400",
   },
   {
-    to: "/structural-steel",
-    accent: "slate",
-    title: "Structural Steel",
-    description: "Beam sections, columns, plates, and structural steel specifications.",
-    icon: (
-      <svg className="size-9" viewBox="0 0 64 64" fill="none" strokeWidth="1.5">
-        <rect x="20" y="14" width="24" height="4" stroke="#94a3b8" fill="none" />
-        <line x1="20" y1="16" x2="44" y2="16" stroke="#94a3b8" opacity="0.3" />
-        <rect x="30" y="18" width="4" height="28" stroke="#94a3b8" fill="none" />
-        <line x1="32" y1="18" x2="32" y2="46" stroke="#94a3b8" strokeDasharray="2 3" opacity="0.4" />
-        <rect x="20" y="46" width="24" height="4" stroke="#94a3b8" fill="none" />
-        <line x1="20" y1="48" x2="44" y2="48" stroke="#94a3b8" opacity="0.3" />
-        <circle cx="32" cy="16" r="1" fill="#94a3b8" />
-        <circle cx="32" cy="32" r="1" fill="#94a3b8" />
-        <circle cx="32" cy="48" r="1" fill="#94a3b8" />
-        <text x="48" y="34" fill="#94a3b8" fontSize="4" textAnchor="start" opacity="0.6">H</text>
-      </svg>
-    ),
-    iconBg: "bg-slate-950/50 ring-slate-400/30",
-    glowBg: "bg-slate-500/10",
-    cardHover: "hover:border-slate-400/30",
-    linkColor: "text-slate-400",
-  },
-  {
     to: "/flanges",
     accent: "emerald",
     title: "Flanges",
@@ -124,6 +100,30 @@ const cards = [
     cardHover: "hover:border-rose-400/30",
     linkColor: "text-rose-400",
     comingSoon: true,
+  },
+  {
+    to: "/structural-steel",
+    accent: "slate",
+    title: "Structural Steel",
+    description: "Beam sections, columns, plates, and structural steel specifications.",
+    icon: (
+      <svg className="size-9" viewBox="0 0 64 64" fill="none" strokeWidth="1.5">
+        <rect x="20" y="14" width="24" height="4" stroke="#94a3b8" fill="none" />
+        <line x1="20" y1="16" x2="44" y2="16" stroke="#94a3b8" opacity="0.3" />
+        <rect x="30" y="18" width="4" height="28" stroke="#94a3b8" fill="none" />
+        <line x1="32" y1="18" x2="32" y2="46" stroke="#94a3b8" strokeDasharray="2 3" opacity="0.4" />
+        <rect x="20" y="46" width="24" height="4" stroke="#94a3b8" fill="none" />
+        <line x1="20" y1="48" x2="44" y2="48" stroke="#94a3b8" opacity="0.3" />
+        <circle cx="32" cy="16" r="1" fill="#94a3b8" />
+        <circle cx="32" cy="32" r="1" fill="#94a3b8" />
+        <circle cx="32" cy="48" r="1" fill="#94a3b8" />
+        <text x="48" y="34" fill="#94a3b8" fontSize="4" textAnchor="start" opacity="0.6">H</text>
+      </svg>
+    ),
+    iconBg: "bg-slate-950/50 ring-slate-400/30",
+    glowBg: "bg-slate-500/10",
+    cardHover: "hover:border-slate-400/30",
+    linkColor: "text-slate-400",
   },
 ];
 

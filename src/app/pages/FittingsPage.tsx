@@ -142,7 +142,7 @@ export default function FittingsPage() {
         <header className="border-b border-white/10 bg-slate-900/50 backdrop-blur-md">
           <div className="mx-auto max-w-7xl px-6 py-6">
             <div className="flex items-center justify-between">
-              <Link to="/specref-home/" className="flex items-center gap-3 group">
+              <Link to="/" className="flex items-center gap-3 group">
                 <div className="flex size-12 items-center justify-center rounded-lg bg-blue-500/20 ring-1 ring-blue-400/30">
                   <svg className="size-7 text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -154,7 +154,7 @@ export default function FittingsPage() {
                 </div>
               </Link>
               <nav className="flex items-center gap-2 text-sm text-slate-400">
-                <Link to="/specref-home/" className="hover:text-white transition-colors">Home</Link>
+                <Link to="/" className="hover:text-white transition-colors">Home</Link>
                 <span>/</span>
                 <span className="text-amber-300">Pipe Fittings</span>
               </nav>
