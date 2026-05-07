@@ -67,16 +67,18 @@ export default function FittingsPage() {
   const [noData,          setNoData]          = useState(false);
   const [history,         setHistory]         = useState<HistoryEntry[]>([]);
 
-  const npsKeys = Object.keys(FITTINGS_DB[selectedFitting]?.sizes ?? {});
+  const npsKeys = Object.keys(FITTINGS_DB[selectedFitting]?.sizes ?? {})
+  .sort((a, b) => parseFloat(a) - parseFloat(b));
   const schedules = availableSchedules(selectedFitting, selectedNPS);
 
   // When fitting changes, reset NPS selection
   useEffect(() => {
-    const first = Object.keys(FITTINGS_DB[selectedFitting]?.sizes ?? {})[0] ?? "4";
-    setSelectedNPS(first);
-    setResult(null);
-    setNoData(false);
-  }, [selectedFitting]);
+  const first = Object.keys(FITTINGS_DB[selectedFitting]?.sizes ?? {})
+  .sort((a, b) => parseFloat(a) - parseFloat(b))[0] ?? "4";
+  setSelectedNPS(first);
+  setResult(null);
+  setNoData(false);
+}, [selectedFitting]);
 
   // When NPS changes, reset schedule to first available
   useEffect(() => {
@@ -176,7 +178,7 @@ export default function FittingsPage() {
             </div>
             <div>
               <h2 className="text-3xl text-white">Pipe Fittings</h2>
-              <p className="text-slate-300">ASME B16.9 — Factory-Made Wrought Buttwelding Fittings</p>
+              <p className="text-slate-300">ASME B16.9 1993 / ASME B16.28 1994 — Factory-Made Wrought Buttwelding Fittings</p>
             </div>
           </div>
         </section>
