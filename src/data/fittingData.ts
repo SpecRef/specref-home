@@ -586,7 +586,7 @@ export const FITTINGS_DB: Record<string, FittingType> = {
     standard: "ASME B16.9 1993",
     sizes: bend180_sizes,
     wallThickness_mm: bend180_wallThickness,
-    weight_kg: bend18_weight,
+    weight_kg: bend180_weight,
   },
   bend180SR: {
     label: "180° Short Radius Elbow",
