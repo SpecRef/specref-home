@@ -46,6 +46,54 @@ const cards = [
     linkColor: "text-amber-400",
   },
   {
+    to: "/unequal-pipe-fittings",
+    accent: "orange",
+    title: "Unequal Fittings",
+    description:
+      "Unequal tees and reducing fittings with separate main and branch wall thickness data.",
+    icon: (
+      <svg className="size-9" viewBox="0 0 64 64" fill="none" strokeWidth="1.5">
+        {/* Main Run */}
+        <line x1="10" y1="32" x2="54" y2="32" stroke="#fb923c" />
+        {/* Branch */}
+        <line x1="32" y1="32" x2="32" y2="12" stroke="#fb923c" />
+        {/* Main pipe walls */}
+        <line x1="10" y1="28" x2="54" y2="28" stroke="#fb923c" opacity="0.5" />
+        <line x1="10" y1="36" x2="54" y2="36" stroke="#fb923c" opacity="0.5" />
+        {/* Branch walls */}
+        <line x1="28" y1="12" x2="28" y2="32" stroke="#fb923c" opacity="0.5" />
+        <line x1="36" y1="12" x2="36" y2="32" stroke="#fb923c" opacity="0.5" />
+        {/* Connection node */}
+        <circle cx="32" cy="32" r="2" fill="#fb923c" />
+        {/* Labels */}
+        <text
+          x="40"
+          y="18"
+          fill="#fb923c"
+          fontSize="3.5"
+          textAnchor="start"
+          opacity="0.6"
+        >
+          BR
+        </text>
+        <text
+          x="46"
+          y="42"
+          fill="#fb923c"
+          fontSize="3.5"
+          textAnchor="start"
+          opacity="0.6"
+        >
+          RUN
+        </text>
+      </svg>
+    ),
+    iconBg: "bg-orange-950/50 ring-orange-400/30",
+    glowBg: "bg-orange-500/10",
+    cardHover: "hover:border-orange-400/30",
+    linkColor: "text-orange-400",
+  },
+  {
     to: "/flanges",
     accent: "emerald",
     title: "Flanges",
@@ -177,7 +225,7 @@ export default function Home() {
 
         {/* Navigation Cards — 5 cards: 1 col → 2 col → 3 col → 5 col */}
         <section className="mx-auto max-w-7xl px-6 pb-24">
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
             {cards.map((card) => {
               const inner = (
                 <>

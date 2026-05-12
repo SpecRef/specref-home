@@ -3,6 +3,7 @@ import Home from "./Home";
 import PipingPage from "./pages/PipingPage";
 import FittingsPage from "./pages/FittingsPage";
 import FlangesPage from "./pages/FlangesPage";
+import UnequalFittingsPage from "./pages/UnequalFittingsPage";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
         <Route path="/piping" element={<PipingPage />} />
         <Route path="/pipe-fittings" element={<FittingsPage />} />
         <Route path="/flanges" element={<FlangesPage />} />
+        <Route path="/unequal-pipe-fittings" element={<UnequalFittingsPage />} />
         {/* /valves — add ValvesPage here when the data file is ready */}
       </Routes>
     </BrowserRouter>
